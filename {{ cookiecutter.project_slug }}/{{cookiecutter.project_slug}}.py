@@ -6,13 +6,7 @@ from __future__ import print_function, with_statement, unicode_literals, divisio
 __author__ = "{{ cookiecutter.full_name }}"
 __copyright__ = "{% now 'utc', '%Y' %} {{ cookiecutter.full_name }} ({{ cookiecutter.domain }}), under the terms of the UNLICENSE"
 __version__ = "{{cookiecutter.version}}"
-__compatible__ = (
-    (3, 7),
-    (3, 8),
-    (3, 9),
-    (3, 10),
-    (3, 11),
-)
+__compatible__ = ((3, 7), (3, 8), (3, 9), (3, 10), (3, 11),)  # fmt: skip
 __doc__ = """
 ===============================
  {{cookiecutter.project_name}}
