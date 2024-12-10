@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # vim: set autoindent smartindent softtabstop=4 tabstop=4 shiftwidth=4 expandtab:
 from __future__ import print_function, with_statement, unicode_literals, division, absolute_import
@@ -31,12 +31,12 @@ from pathlib import Path
 eprint = partial(print, file=sys.stderr)
 
 # Checking for compatibility with Python version
-if not sys.version_info[:2] in __compatible__:
+if sys.version_info[:2] not in __compatible__:
     sys.exit(f"This script is only compatible with the following Python versions: {', '.join([f'{z[0]}.{z[1]}' for z in __compatible__])}")  # pragma: no cover
 
 CONFIG_DEFAULTS = """
-[foobar]
-baz = %(thisdir)s/bla.txt
+#[foobar]
+#baz = %(thisdir)s/bla.txt
 """
 
 
